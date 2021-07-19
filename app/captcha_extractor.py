@@ -1,14 +1,11 @@
 #!/usr/bin/python
 from captcha_solver import resolve
-from bs4 import BeautifulSoup
 from selenium import webdriver
-from PIL import Image
-from io import BytesIO
 from selenium.webdriver.chrome.options import Options
 
 
 def extract(url='http://localhost:8000/',
-            captcha_id='captchaBackground',
+            captcha_id='captcha',
             captcha_input_xpath='//*[@id="textBox"]',
             captcha_submit_xpath='//*[@id="submitButton"]',
             captcha_output_xpath='//*[@id="output"]',
